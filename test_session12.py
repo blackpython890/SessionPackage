@@ -9,7 +9,7 @@ def test_package_set():
 
 #2
 def test_calc_all():
-    assert calculator.__all__ == [['cos_', 'exp_', 'log_', 'sin_', 'tan_', 'relu_', 'sigmoid_']]
+    assert calculator.__all__ == [['cos_', 'exp_', 'log_', 'sin_', 'tan_', 'tanh_', 'relu_', 'sigmoid_']]
 
 
 #3
