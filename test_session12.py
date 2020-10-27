@@ -1,5 +1,6 @@
 import pytest, os
 import calculator
+from calculator import derivatives
 
 
 #1
@@ -31,3 +32,14 @@ def test_calc_path():
 #6
 def test_calc_func():
     assert calculator.cos_(6)
+    assert calculator.sin_(6)
+
+
+#7
+def test_calc_subpackage():
+    assert 'sin_derivative' in dir(derivatives)
+
+
+#8
+def test_calc_not_import():
+    assert 'sin_derivative' not in dir(calculator)
