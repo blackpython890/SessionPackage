@@ -57,9 +57,9 @@ def test_subpack_pack():
 
 #11
 def test_subpack_path():
-    assert derivatives.__path__ == type([3,4])
+    assert type(derivatives.__path__) == type([3,4])
 
 
 #12
 def test_subpack_module():
-    assert type(derivatives) == "<class 'module'>"
+    assert type(derivatives) == type(calculator)
