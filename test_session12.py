@@ -68,3 +68,8 @@ def test_subpack_module():
 #13
 def test_spec_check():
     assert type(derivatives.__spec__) == type(calculator.__spec__)
+
+#14
+def test_subpack_func():
+    assert derivatives.sin_derivative(4)
+    assert derivatives.cos_derivative(3)
