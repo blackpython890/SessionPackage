@@ -43,3 +43,23 @@ def test_calc_subpackage():
 #8
 def test_calc_not_import():
     assert 'sin_derivative' not in dir(calculator)
+
+
+#9
+def test_subpackage_check():
+    assert '__init__.py' in derivatives.__file__
+
+
+#10
+def test_subpack_pack():
+    assert derivatives.__package__ == 'calculator.derivatives'
+
+
+#11
+def test_subpack_path():
+    assert derivatives.__path__ == type([3,4])
+
+
+#12
+def test_subpack_module():
+    assert type(derivatives) == "<class 'module'>"
